@@ -62,7 +62,7 @@ If state3
     Gui, Font, cWhite
     Gui, Font, w1000
     
-    GUI, ADD, TEXT, cYellow, =====================[Процессуальный Кодекс]========================
+    GUI, ADD, TEXT, cYellow, =====================[Процессуальный Кодекс ч.1]========================
     GUI, ADD, TEXT, cYellow, [Статья 16] [Задержание подозреваемого]
     GUI, ADD, TEXT, cYellow,   ч.2. подозрению в совершении правонарушения:
     GUI, ADD, TEXT,,   а) Когда лицо застигнуто в момент совершения правонарушения или непосредственно после его совершения, государственным служащим;​
@@ -93,6 +93,13 @@ State3:=!State3
 
 If state3
 {
+    CustomColor3 = EEAA99
+    Gui +LastFound +AlwaysOnTop -Caption +ToolWindow 
+    Gui, Color, black
+    Gui, Font, s7
+    Gui, Font, cWhite
+    Gui, Font, w1000
+    GUI, ADD, TEXT, cYellow, =====================[Процессуальный Кодекс ч.2]========================
     GUI, ADD, TEXT, cYellow,  Статья 17. [Порядок проведения задержания]
     GUI, ADD, TEXT,,  ч. 1. Задержание лица при ведении следствия производится в следующей последовательности:
     GUI, ADD, TEXT,,  а) Надеть наручники на подозреваемого;​
@@ -119,6 +126,8 @@ If state3
     GUI, ADD, TEXT,,   5. Идентификация личности задерж-го
     GUI, ADD, TEXT,,   6. Отвезти в КПЗ
     GUI, ADD, TEXT,,   7. передаем проц. действия Шерфифам, ЛСПД и ФИБ
+    WinSet, TransColor, %CustomColor3% 180
+    Gui, Show, x5 y1 NoActivate, window. 
 }
 Else
     Gui Destroy
