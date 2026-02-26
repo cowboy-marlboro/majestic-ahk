@@ -50,7 +50,7 @@ Else
     Gui Destroy
 Return
 
-F4::
+F5::
 State3:=!State3
 
 If state3
