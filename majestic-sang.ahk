@@ -126,6 +126,10 @@ If state3
     GUI, ADD, TEXT,,   5. Идентификация личности задерж-го
     GUI, ADD, TEXT,,   6. Отвезти в КПЗ
     GUI, ADD, TEXT,,   7. передаем проц. действия Шерфифам, ЛСПД и ФИБ
+    GUI, ADD, TEXT, cYellow, =====================[Закон о SANG]========================
+    GUI, ADD, TEXT, cYellow, 7 ч.1 Во время патр. мест-и на тер., обозн. в Прил. к УК СА о закр. тер. воен. имеют право ост. и досм-ть подозр. лиц.
+
+
     WinSet, TransColor, %CustomColor3% 180
     Gui, Show, x5 y1 NoActivate, window. 
 }
